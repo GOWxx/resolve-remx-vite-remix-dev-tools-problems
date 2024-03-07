@@ -2,35 +2,19 @@
 
 📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
 
-## Development
+## Reproduction steps
 
 Run the Vite dev server:
 
 ```shellscript
-npm run dev
+pnpm run dev
 ```
 
-## Deployment
+visit [http://localhost:](http://localhost:5173/)
 
-First, build your app for production:
+See problem prompt in terminal or browser.
 
-```sh
-npm run build
-```
 
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
+[vite] Internal server error: Identifier 'AppExport' has already been declared
+      at new AsyncFunction (<anonymous>)
+      at instantiateModule (file:///[EDITED_PROJECT_PATH]/node_modules/.pnpm/vite@5.1.5/node_modules/vite/dist/node/chunks/dep-G-px366b.js:54755:28)
